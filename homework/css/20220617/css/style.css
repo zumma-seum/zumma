@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import "components/status-bar.css";
+@import "screens/music-list.css";
+@import "screens/music-play.css";
+@import "variables.css";
+
+body {
+    height: 100vh;
+    background-color: #F6F6F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    width:250px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    margin:0 30px;
+    padding: 20px;
+    border: 1px solid var(--very-light-grey);
+}
+
+

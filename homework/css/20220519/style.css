@@ -1,0 +1,176 @@
+.header {
+    width: 250px;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2c226;
+    box-sizing: border-box;
+}
+
+.search {
+    width: 200px;
+    padding: 15px 10px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    top: -20px;
+    right: -14px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search__text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+}
+
+.main {
+    padding-left: 13px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.book__content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.cover {
+    width: 75px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.inform {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.inform__column {
+    padding: 2px 0px;
+}
+
+.inform__column:nth-child(4) {
+    display: flex;
+}
+
+.inform__column:last-child {
+    display: flex;
+}
+
+.book__title {
+    font-size: 13px;
+}
+
+.book__subtitle {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-star {
+    color: #f2c226;
+}
+
+.fa-star:last-child {
+    color: #b4b4b4;
+}
+
+.book__cate {
+    font-size: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 55px;
+    height: 15px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 10px;
+}
+
+.bookmark {
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f2c226;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.booknow__btn {
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+}
+
+.booknow__text {
+    color: white;
+    font-size: 8px;
+}
+
+.adventures__list__container {
+    width: 240px;
+    display: flex;
+    padding-left: 0px;
+    overflow: hidden;
+}
+
+.adventures__list {
+    list-style: none;
+    padding: 0px 20px 2px 0px;
+
+}
+
+.adventures__img {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.authors {
+    display: flex;
+    flex-direction: column;
+}
+
+.authors__container {
+    display: flex;
+    padding-top: 10px;
+}
+
+.authors__img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.author__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 160px;
+}
+
+.author__name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.author__desc {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+}

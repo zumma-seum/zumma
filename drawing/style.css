@@ -1,0 +1,75 @@
+@import "reset.css";
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf4fd;
+}
+.canvas {
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08) ;
+}
+.control {
+    width: 200px;
+    height :500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.range {
+    -webkit-appearance: none; /*기본슬라이드 숨기기*/
+    width: 160px; /* firefox에서는 특정 넓이 필요*/
+    background: transparent; /*크롬에서 투명하게 출력*/
+    margin: 15px 0;
+}
+.range-label {
+    size: 10px;
+}
+.range::-webkit-slider-runnable-track{  
+    height: 5px;
+    background: rgba(0,0,0,0.3);
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid rgba(0,0,0,0.3);
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 8px;
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08) ;
+}
+.control-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+.control-btn {
+    width: 69px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08) ;
+    color: rgba(0,0,0,0.7);
+    font-size: 13px;
+    font-family: 800;
+}

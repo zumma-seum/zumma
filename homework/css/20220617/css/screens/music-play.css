@@ -1,0 +1,98 @@
+.current-song{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:40px 0;
+}
+.current-song img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    filter: drop-shadow(3px 3px 3px var(--light-grey));
+}
+.current-song__title {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 50px 0 10px 0;
+    color: var(--main-grey);
+ }
+ .current-song__artist {
+     font-size: 13px;
+     color: var(--light-grey);
+  }
+  .play-status__time {
+     font-size: 11px;
+     color: var(--light-grey);
+     display: flex;
+     justify-content: space-between;
+     margin: 7px 0;
+  }
+@keyframes playCircleClip {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(213px);
+    }
+    100% {
+        transform: translateX(213px);
+    }
+}
+@keyframes playBarClip {
+    0% {
+        width: 9px;
+    }
+    50% {
+        width: 215px;
+    }
+    100% {
+        width: 215px;
+    }
+}
+.play-status__bar {
+    position: relative;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+.play-status__bar div:first-child {
+    width: 215px;
+    height: 5px;
+    background-color: var(--very-light-grey);
+    border-radius: 5px;
+    position: absolute;
+}
+.play-status__bar div:nth-child(2) {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--main-grey);
+    position: absolute;
+    animation: playCircleClip 10s linear infinite;
+}
+.play-status__bar div:last-child {
+    width: 9px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--main-grey);
+    position: absolute;
+    animation: playBarClip 10s linear infinite;
+}
+.play-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--main-grey);
+}
+.fa-repeat,
+.fa-external-link {
+    color: var(--light-grey);
+    font-size: 13px; 
+}
+.fa-step-backward,
+.fa-step-forward {
+    font-size: 20px; 
+}
+.fa-play-circle {
+    font-size: 50px;
+}

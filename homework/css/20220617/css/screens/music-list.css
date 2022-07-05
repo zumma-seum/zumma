@@ -1,0 +1,121 @@
+.container {
+    position: relative;
+}
+.current-album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.current-album img {
+    width:60px;
+    height: 60px;
+    margin: 13px 0;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 3px var(--light-grey));
+}
+.current-album__singer {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--main-grey);
+}
+.current-album__cate {
+    font-size: 10px;
+    color: var(--light-grey);
+    font-weight: 600;
+}
+.comments-container {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+}
+.comments__btn {
+    width: 80px;
+    height: 24px;
+    border-radius: 20px;
+    color:white;
+    background-color: var(--main-grey);
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.like__btn {
+    font-size: 10px;
+    color: var(--main-grey);
+}
+.song-list {
+    height: 260px;
+    overflow-y: auto;
+}
+.song-list::-webkit-scrollbar {
+    width: 3px; 
+}
+.song-list::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey);
+}
+.song-list::-webkit-scrollbar-track {
+    background-color: var(--very-light-grey);
+}
+.song {
+    display: flex;
+    padding: 7px 0;
+}
+.song img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-right: 11px;
+}
+.song__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 180px;
+}
+.song__title span:first-child {
+    font-size: 10px;
+    color: var(--light-grey);
+    font-weight: 600;
+}
+.song__title span:last-child {
+    font-size: 12px;
+    color: var(--main-grey);
+    font-weight: 700;
+}
+.song-list .fa-ellipsis-v {
+    display: flex;
+    align-items: center;
+    color: var(--main-grey);
+    margin-right: 8px;
+}
+.song-play {
+    width:240px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--main-grey);
+    color:white;
+    display: flex;
+    align-items: center;
+    padding:5px 15px;
+    font-size: 4px;
+    margin-left: -10px;
+    position: absolute;
+    bottom: 10px;
+}
+.song-play__title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.song-play__title span:first-child {
+    color: rgb(165, 165, 165);
+    font-size: 7px;
+}
+.song-play__title span:last-child {
+    font-size: 11px;
+}
+.fa-pause {
+    margin: 0 15px;
+    font-size: 18px;
+}

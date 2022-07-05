@@ -1,0 +1,12 @@
+.greeting__container {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting {
+    font-size: 30px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    color: white
+}

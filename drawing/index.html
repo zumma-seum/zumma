@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My drawing</title>
+</head>
+<body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    
+    <div class="control">
+        <label for="jsSize">
+            <span class="rage-label"> 펜 굵기</span>
+        </label>
+        <input id="jsSize" class="range" type="range" min="0" max="20" step="2" value="6" /> 
+        <label for="jsOpacity">
+            <span class="rage-label">투명도</span>
+        </label>
+        <input id="jsOpacity" class="range" type="range" min="0" max="1" step="0.1" value="1" />
+        <div class="colors">
+            <div class="color jsColor" style="background-color:#2c2c2c"></div>
+            <div class="color jsColor" style="background-color:white"></div>
+            <div class="color jsColor" style="background-color:#ff3b30"></div>
+            <div class="color jsColor" style="background-color:#ff9500"></div>
+            <div class="color jsColor" style="background-color:yellow"></div>
+            <div class="color jsColor" style="background-color:#4cd963"></div>
+            <div class="color jsColor" style="background-color:#5ac8fa"></div>
+            <div class="color jsColor" style="background-color:#0579ff"></div>
+            <div class="color jsColor" style="background-color:blueviolet"></div>
+            <div class="color jsColor" style="background-color:pink"></div>
+            <div class="color jsColor" style="background-color:brown"></div>
+            <div class="color jsColor" style="background-color:chartreuse"></div>
+        </div>
+        <div class="control-btns">
+            <button class="control-btn" id="modeBtn">Fill</button>
+            <button class="control-btn" id="resetBtn">Reset</button>
+            <button class="control-btn" id="eraserBtn">Eraser</button>
+            <button class="control-btn" id="saveBtn">Save</button>
+        </div>
+    </div>    
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@import "greetings.css";
+@import "clock.css";
+@import "quotes.css";
+@import "todos.css";
+@import "weather.css";
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+
+}
