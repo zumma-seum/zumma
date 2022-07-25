@@ -1,0 +1,23 @@
+#div4 {
+    background-color: teal;
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#div4>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid wheat;
+    border-radius: 20px;
+    width: 40%;
+    height: 200px;
+    padding: 20px;
+    font-size: 17px;
+}
+#div4>div>span {
+    padding: 10px 0;
+}

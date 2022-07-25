@@ -1,0 +1,27 @@
+#div1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-box {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow:  0 0 7px #fff, 0 0 151px #ff68e6;
+}
+.intro-logo {
+    font-size: 50px;
+    font-weight:500;
+}
+.intro-text {
+    font-size: 20px;
+}
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 21px #fff, 0 0 42px #ff68e6, 0 0 82px #ff68e6, 0 0 92px #ff68e6, 0 0 102px #ff68e6, 0 0 151px #ff68e6;
+}
