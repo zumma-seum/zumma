@@ -1,0 +1,22 @@
+#div2{
+    padding-top: 100px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio-container>a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-container>a>img {
+    width:200px;
+    border: 2px solid rgb(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 10px 30px 30px 30px;
+    padding: 20px;
+}
