@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#login-form")
 const loginInput = document.querySelector("#login-form input")
-const greetingText = document.querySelector("#greeting")
+const greeting = document.querySelector("#greeting")
+const greetingText = document.querySelector("#greeting span:first-child")
+const logout = document.querySelector("#logout-btn")
 const HIDDEN_CLASSNAME = "hidden"
 const USERNAME_KEY = "username"
 
@@ -12,8 +14,24 @@ function onLoginSubmit(event) {
     paintGreeting(username)
 }
 function paintGreeting(username) {
-    greetingText.classList.remove(HIDDEN_CLASSNAME)
-    greetingText.innerText = `Hello ${username}~  Have a mice day~~`
+    const span = document.createElement("span")
+    
+    greeting.classList.remove(HIDDEN_CLASSNAME)
+    greetingText.innerText = `Hello ${username}~`
+    span.innerText = "God loves you. God bless you."
+    greeting.appendChild(span)
+    logout.classList.remove(HIDDEN_CLASSNAME)
+}
+
+function onLogoutClick(event){
+    const li = event.target.parentElement
+    console.log(typeof li.id)
+    li.remove()
+    toDos = toDos.filter((todo) => todo.id !== parseInt(li.id))
+    saveToDos()
+} 
+function saveToDos(){
+    localStorage.setItem(TODOS_KEY,JSON.stringify(toDos))        
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY)
@@ -24,3 +42,4 @@ if (savedUsername === null) {
 } else {
     paintGreeting(savedUsername)
 }
+logout.addEventListener("click", onLogoutClick)

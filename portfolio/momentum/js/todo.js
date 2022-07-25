@@ -7,11 +7,13 @@ const TODOS_KEY = "todos"
 function handleToDoSubmit(event){
     event.preventDefault()    
     const newTodo = toDoInput.value
+    console.log(newTodo)
     toDoInput.value = ""
     const newTodoObj = {
         text:newTodo,
         id:Date.now()
     }
+    console.log(newTodoObj)
     toDos.push(newTodoObj)
     paintToDo(newTodoObj)
     saveToDos()
